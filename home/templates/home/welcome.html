@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section text-center py-5">
+  <div class="container">
+    <h1 class="display-4">Welcome to Kirkuk University Student Portal</h1>
+    <p class="lead">Access lectures, download materials, explore the virtual library, and pay tuition fees online.</p>
+    <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Features</h2>
+    <div class="row">
+      <!-- Watch Lectures -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="bi bi-camera-reels-fill display-4 mb-3 text-primary"></i>
+            <h3 class="card-title">Watch Lectures</h3>
+            <p class="card-text">Access recorded lectures from your professors anytime, anywhere.</p>
+            <a href="{% url 'register' %}" class="btn btn-outline-primary">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Materials -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="bi bi-file-earmark-arrow-down-fill display-4 mb-3 text-success"></i>
+            <h3 class="card-title">Download Materials</h3>
+            <p class="card-text">Download lecture slides, notes, and other study materials.</p>
+            <a href="{% url 'register' %}" class="btn btn-outline-success">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Virtual Library -->
+      <div class="col-md-4 text-center mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <i class="bi bi-book-fill display-4 mb-3 text-warning"></i>
+            <h3 class="card-title">Virtual Library</h3>
+            <p class="card-text">Explore a vast collection of e-books, journals, and research papers.</p>
+            <a href="{% url 'register' %}" class="btn btn-outline-warning">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tuition Payment Section -->
+<section id="tuition" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Pay Tuition Fees Online</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="lead">Pay your college tuition fees securely and conveniently online. No more waiting in long queues!</p>
+        <a href="{% url 'register' %}" class="btn btn-primary btn-lg">Sign Up to Pay</a>
+      </div>
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/500x300" alt="Tuition Payment" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Students Say</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>"The virtual library is a game-changer! I can access all the resources I need for my research."</p>
+              <footer class="blockquote-footer">Ahmed, <cite>Computer Science Student</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>"Paying tuition online is so convenient. I no longer have to worry about missing deadlines."</p>
+              <footer class="blockquote-footer">Sara, <cite>Engineering Student</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote mb-0">
+              <p>"The lecture recordings are a lifesaver. I can revisit topics I didn't understand in class."</p>
+              <footer class="blockquote-footer">Ali, <cite>Medical Student</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="bg-primary text-light text-center py-5">
+  <div class="container">
+    <h2 class="mb-4">Ready to Get Started?</h2>
+    <p class="lead mb-4">Join thousands of students who are already benefiting from our platform.</p>
+    <a href="{% url 'register' %}" class="btn btn-light btn-lg">Sign Up Now</a>
+  </div>
+</section>
+{% endblock %}
